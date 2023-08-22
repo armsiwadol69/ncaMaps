@@ -22,6 +22,7 @@ function App() {
                   <img className='img-fluid' id='image_1' src="" alt="" />
                 </div>
                 <p className='text-muted mt-5' id='remark'></p>
+                <a href="https://github.com/armsiwadol69/ncaMaps" target='_blank'>Open Github's Repository</a>
               </div>
               <div className='card-footer'>
                 {/* document.getElementById('publishedAt').innerHTML = dataFromAPI.publishedAt;

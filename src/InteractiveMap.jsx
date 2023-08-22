@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css'; // Import Leaflet's CSS
 import Swal from 'sweetalert2';
 import axios from 'axios';
 
-import thaiBoundaryGeoJSON from './thailand.json'; // GeoJSON data for Thailand's boundary
+import thaiBoundaryGeoJSON from './thailandWithName.json'; // GeoJSON data for Thailand's boundary
 
 const InteractiveMap = () => {
   const handleProvinceClick = (e) => {
@@ -47,7 +47,7 @@ const InteractiveMap = () => {
     try {
       const dataFromAPI = JSON.parse(await getRamdomData())[0];
       console.log(dataFromAPI);
-      await new Promise(r => setTimeout(r, 500));
+      //await new Promise(r => setTimeout(r, 500));
       document.getElementById('nameOfProvince').innerHTML = data;
       document.getElementById('title').innerHTML = dataFromAPI.title;
       document.getElementById('content').innerHTML = dataFromAPI.content;
